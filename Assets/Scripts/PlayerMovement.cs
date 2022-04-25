@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private BoxCollider playerBoxCollider;
     private float startplayerBoxColliderCenter, startplayerBoxColliderSize;
     private Spawner spawner;
+    public GameObject ground;
 
     void Start()
     {
@@ -130,7 +131,11 @@ public class PlayerMovement : MonoBehaviour
             soundManager.Crashed();
             //Destroy(other.gameObject);
         }
-
+        if (other.gameObject.CompareTag("moreGround"))
+        {
+            Debug.Log("more ground entered");
+            Instantiate(ground.gameObject, new Vector3(-56.9f,1.72f,0), ground.gameObject.transform.rotation);
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {

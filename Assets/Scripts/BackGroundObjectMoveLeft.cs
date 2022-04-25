@@ -12,10 +12,9 @@ public class BackGroundObjectMoveLeft : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.left * Time.deltaTime * spawner.leftSpeed,Space.World);
-        if (transform.position.x <-135)
+        if (!gameObject.CompareTag("moreGround") && transform.position.x <-150)
         {
             Destroy(gameObject);
         }
     }
-
 }

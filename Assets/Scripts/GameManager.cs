@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        GroundMoveLeft();
+        //GroundMoveLeft();
         Player();
         ScoreCoinAdd();
         GameOverTextButton();
@@ -113,10 +113,10 @@ public class GameManager : MonoBehaviour
         Destroy(startButton.gameObject);
 
         StartCoroutine(spawner.SpawnWorkersTime());
-        StartCoroutine(spawner.SpawnBackgroundObstaclesTime());
-        StartCoroutine(spawner.SpawnObstacles());
+        //StartCoroutine(spawner.SpawnBackgroundObstaclesTime());
+        //StartCoroutine(spawner.SpawnObstacles());
         StartCoroutine(spawner.SpawnCoinTime());
-        StartCoroutine(spawner.SpawnTubeTime());
+        //StartCoroutine(spawner.SpawnTubeTime());
         StartCoroutine(Timer());
     }
 

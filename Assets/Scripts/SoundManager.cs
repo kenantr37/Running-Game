@@ -25,7 +25,7 @@ public class SoundManager : MonoBehaviour
     {
         if (!gameManager.startGame)
         {
-            audioSource.PlayOneShot(beforeStartSound,.4f);
+            audioSource.PlayOneShot(beforeStartSound,1.0f);
         }
     }
     public void CoinSound()
@@ -40,7 +40,7 @@ public class SoundManager : MonoBehaviour
     {
         audioSource.Stop();
         audioSource.PlayOneShot(explosion, .5f);
-        audioSource.PlayOneShot(deathSong, 1.0f);        
+        audioSource.PlayOneShot(deathSong, .5f);        
     }
     public void SlideSound()
     {

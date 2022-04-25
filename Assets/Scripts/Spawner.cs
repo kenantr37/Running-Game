@@ -10,12 +10,14 @@ public class Spawner : MonoBehaviour
     public GameObject[] backgroundObstacles;
     public GameObject coin, tube;
     public GameObject[] workers;
-    private int[] randomTubeTimes = { 14, 7, 21};
+    private int[] randomTubeTimes = { 14, 7, 21 };
     int randomTubeIndex;
-
+    private PlayerMovement playerMovement;
+    public GameObject ground;
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
     }
 
     void Update()
@@ -36,14 +38,14 @@ public class Spawner : MonoBehaviour
         {
             leftSpeed = 0;
         }
-        if (gameManager.timer > 0 && gameManager.timer < 20)
+        if (gameManager.timer > 0 && gameManager.timer < 60)
         {
-            leftSpeed += .2f * Time.deltaTime;
-        }
-        if (gameManager.timer > 30 && gameManager.timer < 60)
+            leftSpeed += 3f * Time.deltaTime;
+        }/*
+        if (gameManager.timer > 60)
         {
-            leftSpeed += .05f * Time.deltaTime;
-        }
+            leftSpeed += .001f * Time.deltaTime;
+        }*/
 
     }
     public IEnumerator SpawnObstacles()
