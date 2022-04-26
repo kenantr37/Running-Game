@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 391146920}
   - component: {fileID: 391146919}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: GroundEndLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -767,6 +767,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 780219324}
   m_CullTransparentMesh: 1
+--- !u!1 &822444353 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3782106006286924807, guid: f5136b8552086f14e8a340a4325e2b08, type: 3}
+  m_PrefabInstance: {fileID: 1692737518}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &937290179
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,7 +999,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 3
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
@@ -1288,7 +1293,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c0b847f624e38f4d9db417522e7e6b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beforeStartSound: {fileID: 0}
   jump: {fileID: 8300000, guid: e2d4be0df1d9a124b836254ad8bffefd, type: 3}
   coin: {fileID: 8300000, guid: b5fe97e96feb04f4d9cb1437800b1d3a, type: 3}
   running: {fileID: 8300000, guid: ce0a5ffd46e24a043aea1b42e9eb7433, type: 3}
@@ -1305,11 +1309,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 97109d232cf95ee4f80ac715847e187b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.33
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1525,9 +1529,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3782106005098421632, guid: f5136b8552086f14e8a340a4325e2b08, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3782106005098421634, guid: f5136b8552086f14e8a340a4325e2b08, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -56.94
+      value: 2.705
       objectReference: {fileID: 0}
     - target: {fileID: 3782106006286924806, guid: f5136b8552086f14e8a340a4325e2b08, type: 3}
       propertyPath: m_RootOrder
@@ -1641,7 +1649,9 @@ MonoBehaviour:
   playerDeathEffect: {fileID: 1292761136}
   playerJumpEffect: {fileID: 1002864147}
   coinEffect: {fileID: 1291654306}
-  ground: {fileID: 3782106006286924807, guid: f5136b8552086f14e8a340a4325e2b08, type: 3}
+  ground: {fileID: 822444353}
+  jump: {fileID: 0}
+  down: {fileID: 0}
 --- !u!65 &1721467067
 BoxCollider:
   m_ObjectHideFlags: 0

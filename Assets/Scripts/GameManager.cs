@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
         timerPanel = GameObject.Find("PanelTimer");
         scorePanel = GameObject.Find("PanelScore");
 
-        groundStartingPosition = ground.transform.position;
+        //groundStartingPosition = ground.transform.position;
         ground_collider_lenght = ground.gameObject.GetComponent<BoxCollider>().size.x / 2;
         scoreYazi.text = "Score : 0";
         timeText.gameObject.SetActive(false);
@@ -114,9 +114,9 @@ public class GameManager : MonoBehaviour
 
         StartCoroutine(spawner.SpawnWorkersTime());
         //StartCoroutine(spawner.SpawnBackgroundObstaclesTime());
-        //StartCoroutine(spawner.SpawnObstacles());
+        StartCoroutine(spawner.SpawnObstacles());
         StartCoroutine(spawner.SpawnCoinTime());
-        //StartCoroutine(spawner.SpawnTubeTime());
+        StartCoroutine(spawner.SpawnTubeTime());
         StartCoroutine(Timer());
     }
 

@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using TMPro;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody playerRb;
@@ -19,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     private float startplayerBoxColliderCenter, startplayerBoxColliderSize;
     private Spawner spawner;
     public GameObject ground;
+    public Button jump, down;
 
     void Start()
     {
@@ -126,6 +128,8 @@ public class PlayerMovement : MonoBehaviour
             playerdead = true;
             gameManager.isGameOver = true;
             playerAnimator.SetBool("Walking", false);
+            playerAnimator.SetBool("Jumping", false);
+            playerAnimator.SetBool("Running", false);
             playerAnimator.SetBool("Death", true);
             playerDeathEffect.Play();
             soundManager.Crashed();
@@ -134,7 +138,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("moreGround"))
         {
             Debug.Log("more ground entered");
-            Instantiate(ground.gameObject, new Vector3(-56.9f,1.72f,0), ground.gameObject.transform.rotation);
+            Instantiate(ground.gameObject, new Vector3(-45.1f,1.72f,0), ground.gameObject.transform.rotation);
         }
     }
     private void OnCollisionEnter(Collision collision)

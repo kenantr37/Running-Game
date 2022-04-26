@@ -8,7 +8,6 @@ public class SoundManager : MonoBehaviour
     private GameManager gameManager;
     private PlayerMovement player;
     private AudioSource audioSource;
-    public AudioClip beforeStartSound;
     public AudioClip jump;
     public AudioClip coin;
     public AudioClip running;
@@ -25,7 +24,7 @@ public class SoundManager : MonoBehaviour
     {
         if (!gameManager.startGame)
         {
-            audioSource.PlayOneShot(beforeStartSound,1.0f);
+            audioSource.Play();
         }
     }
     public void CoinSound()
@@ -40,7 +39,7 @@ public class SoundManager : MonoBehaviour
     {
         audioSource.Stop();
         audioSource.PlayOneShot(explosion, .5f);
-        audioSource.PlayOneShot(deathSong, .5f);        
+        audioSource.PlayOneShot(deathSong, .5f);
     }
     public void SlideSound()
     {

@@ -38,15 +38,18 @@ public class Spawner : MonoBehaviour
         {
             leftSpeed = 0;
         }
-        if (gameManager.timer > 0 && gameManager.timer < 60)
+        else if (gameManager.timer > 0 && gameManager.timer < 3)
         {
-            leftSpeed += 3f * Time.deltaTime;
-        }/*
-        if (gameManager.timer > 60)
+            leftSpeed += .5f * Time.deltaTime;
+        }
+        else if (gameManager.timer > 3 && gameManager.timer < 30)
         {
-            leftSpeed += .001f * Time.deltaTime;
-        }*/
-
+            leftSpeed += .1f * Time.deltaTime;
+        }
+        else if (gameManager.timer > 60)
+        {
+            leftSpeed += .1f * Time.deltaTime;
+        }
     }
     public IEnumerator SpawnObstacles()
     {
@@ -104,7 +107,7 @@ public class Spawner : MonoBehaviour
     void SpawnRandomWorkers()
     {
         int randomWorker = Random.Range(0, workers.Length);
-        Vector3 workerPosition = new Vector3(-118.5f, 1.53f, 0.5500001f);
+        Vector3 workerPosition = new Vector3(-116.0f, 1.53f, 0.57f);
         Instantiate(workers[randomWorker], workerPosition, workers[randomWorker].transform.rotation);
     }
     GameObject SpawnBackgroundObstacles()
