@@ -113,7 +113,7 @@ public class GameManager : MonoBehaviour
         Destroy(startButton.gameObject);
 
         StartCoroutine(spawner.SpawnWorkersTime());
-        //StartCoroutine(spawner.SpawnBackgroundObstaclesTime());
+        StartCoroutine(spawner.SpawnUfoTime());
         StartCoroutine(spawner.SpawnObstacles());
         StartCoroutine(spawner.SpawnCoinTime());
         StartCoroutine(spawner.SpawnTubeTime());

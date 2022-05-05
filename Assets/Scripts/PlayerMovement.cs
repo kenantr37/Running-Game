@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public int coinNumberCount;
     public Animator playerAnimator;
     public ParticleSystem playerDeathEffect, playerJumpEffect, coinEffect;
+    public ParticleSystem playerSlayingEffect;
     private SoundManager soundManager;
     private Quaternion startingLocalRotation;
     private BoxCollider playerBoxCollider;
@@ -72,22 +73,29 @@ public class PlayerMovement : MonoBehaviour
             isOnGround = false;
             standing = true;
         }
-        if (Input.GetKeyDown(KeyCode.DownArrow) && isOnGround && !gameManager.isGameOver && gameManager.startGame) // CHECK THIS
+        if (Input.GetKeyDown(KeyCode.DownArrow) && isOnGround && !gameManager.isGameOver && gameManager.startGame)
         {
             soundManager.SlideSound();
             standing = false;
             jumpForce = 0;
+            if (!standing)
+            {
+                StartCoroutine(SlidingParticleEffect());
+            }
             playerAnimator.SetBool("Slide", true);
             StartCoroutine(SlideBoxColliderSize(collider_sizey, collider_centery));
             StartCoroutine(SlideEndingTime());
-
         }
         if (standing)
         {
             playerBoxCollider.size = new Vector3(playerBoxCollider.size.x, startplayerBoxColliderSize, playerBoxCollider.size.z);
             playerBoxCollider.center = new Vector3(playerBoxCollider.center.x, startplayerBoxColliderCenter, playerBoxCollider.center.z);
-
         }
+    }
+    IEnumerator SlidingParticleEffect()
+    {
+        yield return new WaitForSeconds(.65f);
+        playerSlayingEffect.Play();
     }
     void SlideEnding()
     {
@@ -138,7 +146,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("moreGround"))
         {
             Debug.Log("more ground entered");
-            Instantiate(ground.gameObject, new Vector3(-45.1f,1.72f,0), ground.gameObject.transform.rotation);
+            Instantiate(ground.gameObject, new Vector3(-45.1f, 1.72f, 0), ground.gameObject.transform.rotation);
         }
     }
     private void OnCollisionEnter(Collision collision)

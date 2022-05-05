@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: 7bc2b046d1225864eab74171587a017d
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -3248336867573569778
+    second: UFO_cockpit|exterior_lights|Take 001|BaseLayer
+  - first:
+      74: 1491338953852491984
+    second: UFO_cockpit|Omni001|Take 001|BaseLayer
+  - first:
+      74: 1820046982690354515
+    second: UFO_cockpit|Omni002|Take 001|BaseLayer
+  - first:
+      74: 8956726905359491975
+    second: UFO_cockpit|Omni003|Take 001|BaseLayer
+  - first:
+      74: -6251834984094034461
+    second: UFO_cockpit|Omni004|Take 001|BaseLayer
+  - first:
+      74: 7667528814364264724
+    second: UFO_cockpit|Omni005|Take 001|BaseLayer
+  - first:
+      74: 7700189380223539707
+    second: UFO_cockpit|Omni006|Take 001|BaseLayer
+  - first:
+      74: 5367109384606233087
+    second: UFO_cockpit|Omni007|Take 001|BaseLayer
+  - first:
+      74: -7916327524591259589
+    second: UFO_cockpit|Omni008|Take 001|BaseLayer
+  - first:
+      74: 6790979362700095430
+    second: UFO_cockpit|Omni009|Take 001|BaseLayer
+  - first:
+      74: 6256125731860861460
+    second: UFO_cockpit|scene_illumination_lights|Take 001|BaseLayer
+  - first:
+      74: 6806293044115859666
+    second: UFO_cockpit|Spot001.Target|Take 001|BaseLayer
+  - first:
+      74: 6157601186600844986
+    second: UFO_cockpit|Spot001|Take 001|BaseLayer
+  - first:
+      74: 5978266426655241745
+    second: UFO_cockpit|Spot002.Target|Take 001|BaseLayer
+  - first:
+      74: -6298578389996126160
+    second: UFO_cockpit|Spot002|Take 001|BaseLayer
+  - first:
+      74: 3835039829748396048
+    second: UFO_cockpit|UFO_body|Take 001|BaseLayer
+  - first:
+      74: 7304529680558259145
+    second: UFO_cockpit|UFO_cockpit|Take 001|BaseLayer
+  - first:
+      74: -8325144642843728813
+    second: UFO_body|exterior_lights|Take 001|BaseLayer
+  - first:
+      74: 6394773970655894833
+    second: UFO_body|Omni001|Take 001|BaseLayer
+  - first:
+      74: 8117649674700795673
+    second: UFO_body|Omni002|Take 001|BaseLayer
+  - first:
+      74: 4902876562822670019
+    second: UFO_body|Omni003|Take 001|BaseLayer
+  - first:
+      74: -1705278931453660518
+    second: UFO_body|Omni004|Take 001|BaseLayer
+  - first:
+      74: -1273228880004143782
+    second: UFO_body|Omni005|Take 001|BaseLayer
+  - first:
+      74: 7954054595928826503
+    second: UFO_body|Omni006|Take 001|BaseLayer
+  - first:
+      74: -8168600334593218581
+    second: UFO_body|Omni007|Take 001|BaseLayer
+  - first:
+      74: 1253614360734894339
+    second: UFO_body|Omni008|Take 001|BaseLayer
+  - first:
+      74: -3497647028256211421
+    second: UFO_body|Omni009|Take 001|BaseLayer
+  - first:
+      74: -2238135434627708832
+    second: UFO_body|scene_illumination_lights|Take 001|BaseLayer
+  - first:
+      74: -4575597140395036567
+    second: UFO_body|Spot001.Target|Take 001|BaseLayer
+  - first:
+      74: -2193078323308243977
+    second: UFO_body|Spot001|Take 001|BaseLayer
+  - first:
+      74: 1895628334589600392
+    second: UFO_body|Spot002.Target|Take 001|BaseLayer
+  - first:
+      74: -7182124146409032510
+    second: UFO_body|Spot002|Take 001|BaseLayer
+  - first:
+      74: -486601412446921393
+    second: UFO_body|UFO_body|Take 001|BaseLayer
+  - first:
+      74: 2366049748048954661
+    second: UFO_body|UFO_cockpit|Take 001|BaseLayer
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
