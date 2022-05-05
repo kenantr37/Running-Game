@@ -134,7 +134,7 @@ public class Spawner : MonoBehaviour
     }
     void SpawnCoins()
     {
-        Vector3 coinRandomPosition = new Vector3(Random.Range(-113, -107.0f), Random.Range(1.517f, 2.096f), -0.096f);
+        Vector3 coinRandomPosition = new Vector3(Random.Range(-113, -107.0f), Random.Range(1.5f, 3.096f), -0.096f);
 
         Instantiate(coin, coinRandomPosition, coin.transform.rotation);
     }
@@ -146,7 +146,7 @@ public class Spawner : MonoBehaviour
     }
     void SpawnUfo()
     {
-        Vector3 ufoPosition = new Vector3(-116, Random.Range(1.8f,4), -0.15f);
+        Vector3 ufoPosition = new Vector3(-116, Random.Range(2,2.2f), -0.15f);
 
         Instantiate(ufo, ufoPosition, ufo.transform.rotation);
     }
